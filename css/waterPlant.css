@@ -1,0 +1,144 @@
+/* Reset and Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.logo {
+  width: 80px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0.5rem 0 0;
+}
+
+.header span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Section Styles */
+.core-services {
+  padding: 2rem;
+  text-align: center;
+}
+
+.core-services h2 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  background: #00c2cb;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 16px;
+  color: #555;
+}
+
+.water-title {
+  background: #b0f2f5;
+  padding: 0.4rem 1rem;
+  font-size: 22px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.subtext {
+  font-size: 16px;
+  color: #444;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.water-list {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.water-list li {
+  margin: 0.8rem 0;
+  padding-left: 1.8rem;
+  position: relative;
+  font-size: 16px;
+}
+
+.water-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: green;
+  font-weight: bold;
+}
+
+/* Image Section */
+.water-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 190px;
+  height: 190px;
+  background: linear-gradient(#7ccfea, #8382cd, #da86b4);
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
+  z-index: 0;
+}
+
+.img-wrapper img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e0f7f9;
+  position: relative;
+  z-index: 1;
+}
+
+/* Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px 10px;
+  font-size: 0.9em;
+  color: #777;
+}
+
