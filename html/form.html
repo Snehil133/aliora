@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Submission Form</title>
+  <link rel="stylesheet" href="/css/form.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Submit Your Resume</h2>
+    <form id="resume-form">
+      <input type="text" name="user_name" placeholder="Full Name" required />
+      <input type="text" name="user_address" placeholder="Address" required />
+      <input type="email" name="user_email" placeholder="Email" required />
+      <input type="tel" name="user_phone" placeholder="Phone Number" required />
+      <input type="file" name="user_resume" accept=".pdf,.doc,.docx" required />
+      <button type="submit">Send</button>
+    </form>
+    <p id="status"></p>
+  </div>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="/js/form.js"></script>
+</body>
+</html>
