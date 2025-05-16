@@ -17,8 +17,8 @@ body {
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 20px;
+  width: 80px;
+  margin-bottom: 1px;
   border-radius: 50%;
 }
 
@@ -68,4 +68,138 @@ body {
   padding: 20px 10px;
   font-size: 0.9em;
   color: #777;
+}
+
+
+/* --- Navbar Styling --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #004d7a, #008793, #00bf72);
+  padding: 1rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* .navbar .logo {
+  height: 50px;
+  border-radius: 50%;
+} */
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+/* --- Responsive Navbar --- */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #004d7a;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* --- Header, Services, Footer (optional custom styling) --- */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.service-circle img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #008793;
+  transition: transform 0.3s ease;
+}
+
+.service-circle img:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
 }
