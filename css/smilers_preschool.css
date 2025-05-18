@@ -5,11 +5,25 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff;
   color: #111;
   text-align: center;
+
+  background-image: url('/images/Child-To-Preschool.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Ensure the image stretches correctly on all screens */
+  background-attachment:fixed /* Optional: for a parallax effect */
 }
 
 .header {
