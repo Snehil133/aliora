@@ -23,7 +23,7 @@ body {
   background-repeat: no-repeat;
 
   /* Ensure the image stretches correctly on all screens */
-  background-attachment:fixed /* Optional: for a parallax effect */
+  background-attachment:fixed; /* Optional: for a parallax effect */
 }
 
 .header {
@@ -69,6 +69,8 @@ body {
 .service-description ul li {
   margin-bottom: 10px;
   line-height: 1.6;
+  color: rgb(8, 0, 255);
+  font-size: 1.1em;
 }
 
 .footer {

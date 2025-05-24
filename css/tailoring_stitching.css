@@ -10,6 +10,12 @@ body {
   background-color: #fff;
   color: #111;
   text-align: center;
+  background-image: url(/images/tailoring\ background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Ensure the image stretches correctly on all screens */
+  background-attachment:fixed; /* Optional: for a parallax effect */
 }
 
 .header {
@@ -45,7 +51,8 @@ body {
 
 .service-description p {
   margin-bottom: 15px;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .service-description ul {
@@ -55,6 +62,9 @@ body {
 .service-description ul li {
   margin-bottom: 10px;
   line-height: 1.6;
+  color: rgb(248, 249, 244);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .footer {

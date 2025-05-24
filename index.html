@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ali Ora Multi-Service</title>
+  <title>AliOra Multi-Service</title>
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <style>
+    .slider {
+      width: 60%;
+      margin: 40px auto;
+    }
+    .slider-item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .slider-item img {
+      width: 80%;
+      height: auto;
+      border-radius: 0;
+      object-fit: cover;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+    .slider-item img:hover {
+      transform: scale(1.02);
+    }
+    .slider-item p {
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -16,8 +48,8 @@
     <ul id="nav-links">
       <li><a href="./html/mission.html" target="_blank">Mission</a></li>
       <li><a href="./html/core_services.html" target="_blank">Core Services</a></li>
-      <li><a href="./html/form.html" target="_blank">Form</a></li>
-      <li><a href="./html/water_solutions.html" target="_blank">Water Solutions</a></li>
+      <li><a href="./html/form.html" target="_blank">Career With Us</a></li>
+      <!-- <li><a href="./html/water_solutions.html" target="_blank">Water Solutions</a></li> -->
     </ul>
   </nav>
   <!-- Navbar End -->
@@ -27,34 +59,86 @@
     <p>Your Partner in Complete <br> Industrial Setup & Support</p>
   </header>
 
-  <section class="services">
-    <div class="service-circle">
+  <!-- Slider Section -->
+  <section class="slider">
+    <div class="slider-item">
       <img src="./images/cctv.jpg" alt="CCTV Installation">
+      <p>CCTV Installation</p>
     </div>
-    <div class="service-circle">
+    <div class="slider-item">
       <img src="./images/welding.avif" alt="Welding Services">
+      <p>Welding Services</p>
     </div>
-    <div class="service-circle">
+    <div class="slider-item">
       <img src="./images/industrial tank.jpeg" alt="Industrial Tanks">
+      <p>Industrial Tanks</p>
     </div>
-    <div class="service-circle">
+    <div class="slider-item">
       <img src="./images/electrical setup.jpg" alt="Electrical Setup">
+      <p>Electrical Setup</p>
     </div>
-    <div class="service-circle">
+    <div class="slider-item">
       <img src="./images/garden services.jpg" alt="Garden Services">
+      <p>Garden Services</p>
+    </div>
+    <div class="slider-item">
+      <img src="./images/fire extinguisher.jpg" alt="Fire Safety">
+      <p>Fire Safety</p>
+    </div>
+    <div class="slider-item">
+      <img src="./images/Manpower-Supply.jpeg" alt="Manpower Supply">
+      <p>Manpower Supply</p>
+    </div>
+    <div class="slider-item">
+      <img src="./images/tailoring.jpg" alt="Tailoring">
+      <p>Tailoring</p>
+    </div>
+    <div class="slider-item">
+      <img src="./images/printing images.jpg" alt="Printing">
+      <p>Printing</p>
+    </div>
+    <div class="slider-item">
+      <img src="./images/cctv1.webp" alt="Security Setup">
+      <p>Security Setup</p>
+    </div>
+    <div class="slider-item">
+      <img src="./images/preschool.jpg" alt="Preschool Franchise">
+      <p>Preschool Franchise</p>
+    </div>
+    <div class="slider-item">
+      <img src="./images/mental health.webp" alt="Mental Wellness Consulting">
+      <p>Mental Wellness</p>
+    </div>
+    <div class="slider-item">
+      <img src="./images/workforce-wellness.jpg" alt="Fabrication">
+      <p>Fabrication</p>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2025 Ali Ora Multi-Service. All Rights Reserved. Developed by ❤️<a target="_blank" href="https://snehil133portfolio.vercel.app/">Snehil Gupta</a></p>
+    <p>© 2025 AliOra Multi-Service. All Rights Reserved. Developed by ❤️<a target="_blank" href="https://snehil133portfolio.vercel.app/">Snehil Gupta</a></p>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
-    const toggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
+    $(document).ready(function(){
+      $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: true
+      });
 
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+      const toggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
     });
   </script>
 </body>
