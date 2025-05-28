@@ -17,14 +17,112 @@ body {
   background-attachment: fixed; /* Optional: for a parallax effect */
 }
 
+/* --- Navbar Styling --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #004d7a, #008793, #00bf72);
+  padding: 1rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* .navbar .logo {
+  height: 50px;
+  border-radius: 50%;
+} */
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+/* --- Responsive Navbar --- */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #004d7a;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
 .header {
   padding: 40px 20px;
   background: linear-gradient(to right, #f9f9f9, #e9f5ff);
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 20px;
+  width: 80px;
+  margin-bottom: 1px;
   border-radius: 50%;
 }
 

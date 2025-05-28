@@ -1,15 +1,9 @@
-
-* {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #111;
-  text-align: center;
+  color: #333;
 }
 
 /* --- Navbar Styling --- */
@@ -110,105 +104,60 @@ body {
   }
 }
 
-.header {
-  padding: 40px 20px;
-  background: linear-gradient(to right, #f9f9f9, #e9f5ff);
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-top: 40px;
 }
 
 .logo {
-  width: 80px;
-  margin-bottom: 1px;
-  border-radius: 50%;
+  text-align: center;
 }
 
-.header h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.header p {
-  font-size: 1.2em;
-  color: #555;
-}
-
-.services {
-  padding: 30px 10px;
-}
-
-.service-description {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
-}
-
-.service-description p {
-  margin-bottom: 15px;
-  font-size: 1.1em;
-}
-
-.service-description ul {
-  padding-left: 20px;
-}
-
-.service-description ul li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-.footer {
-  background-color: #f2f2f2;
-  padding: 20px 10px;
-  font-size: 0.9em;
-  color: #777;
-}
-
-.water-images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.img-wrapper {
-  position: relative;
-  width: 170px;
-  height: 170px;
-}
-
-.img-wrapper::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 190px;
-  height: 190px;
-  background: linear-gradient(#7ccfea, #8382cd, #da86b4);
-  border-radius: 50%;
-  animation: spin 4s linear infinite;
-  z-index: 0;
-}
-
-.img-wrapper img {
+.logo img {
   width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #e0f7f9;
-  position: relative;
-  z-index: 1;
 }
 
-/* Animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+h1 {
+  text-align: center;
+  color: #00695c;
 }
 
+.info {
+  margin-top: 30px;
+}
+
+.info p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.icon {
+  font-weight: bold;
+  color: #004d40;
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
 
 .footer {
-  background-color: #f2f2f2;
-  padding: 20px 10px;
+  text-align: center;
   font-size: 0.9em;
-  color: #777;
+  margin-top: 40px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
 }
