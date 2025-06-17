@@ -145,13 +145,39 @@ body {
   max-width: 800px;
   margin: auto;
   text-align: left;
+  background-color: rgba(185, 185, 170, 0.341);
 }
+
+/* .service-description p {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight: bold;;
+} */
 
 .service-description p {
   margin-bottom: 15px;
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  color: #5c0c0d;
+  animation: typing 3s steps(50, end) infinite;
 }
+
+/* Typewriter animation (looping) */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 
 .service-description ul {
   padding-left: 20px;
@@ -162,7 +188,7 @@ body {
   line-height: 1.6;
   font-size: 1.5em;
   font-weight: 700;
-  color: rgb(0, 64, 255);
+  color: rgb(24, 42, 95);
 }
 
 .footer {
