@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/css/contactUs.css" />
 </head>
 <body>
-    <!-- Navbar Start -->
+  <!-- Navbar -->
   <nav class="navbar">
     <img src="/images/logo1.JPG" alt="Ali Ora Logo" class="logo" />
     <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
@@ -23,26 +23,63 @@
       <!-- <li><a href="./html/water_solutions.html" target="_blank">Water Solutions</a></li> -->
     </ul>
   </nav>
-  <!-- Navbar End -->
-  <div class="container">
-    <div class="logo">
-      <img src="/images/logo1.JPG" alt="Ali Ora Logo" />
-    </div>
-    <h1>Ali Ora Multi-Service</h1>
-    <div class="info">
-      <p><span class="icon">📞 Phone:</span> 9558022530, 7069782577, 7096641485</p>
-      <p><span class="icon">📧 Email:</span> <a href="mailto:info@aliora.co.in">info@aliora.co.in</a></p>
-      <p><span class="icon">📍 Address:</span> G12 SMC Complex, Kilvani Naka, Silvassa, Dadra & Nagar Haveli, Daman & Diu – 396230</p>
-      <p><span class="icon">🌐 Website:</span> <a href="https://www.aliora.co.in" target="_blank">www.aliora.co.in</a></p>
-    </div>
-    <iframe 
-      src="https://www.google.com/maps?q=G12+SMC+Complex+Kilvani+Naka,+Silvassa,+Dadra+and+Nagar+Haveli,+396230&output=embed"
-      allowfullscreen
-      loading="lazy">
-    </iframe>
-    <div class="footer">
-      &copy; 2025 Ali Ora Multi-Service. All rights reserved.
-    </div>
-  </div>
+
+  <!-- Main Content -->
+  <main class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="/images/logo1.JPG" alt="Ali Ora Logo" />
+      </div>
+      <h1>Ali Ora Multi-Service</h1>
+    </header>
+
+    <!-- Contact Information -->
+    <section class="info">
+      <div class="contact-item">
+        <span class="icon">📞</span>
+        <div class="contact-details">
+          <strong>Phone:</strong>
+          <p>9558022530, 7069782577, 7096641485</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="icon">📧</span>
+        <div class="contact-details">
+          <strong>Email:</strong>
+          <p><a href="mailto:info@aliora.co.in">info@aliora.co.in</a></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="icon">📍</span>
+        <div class="contact-details">
+          <strong>Address:</strong>
+          <p>G12 SMC Complex, Kilvani Naka, Silvassa, Dadra & Nagar Haveli, Daman & Diu – 396230</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="icon">🌐</span>
+        <div class="contact-details">
+          <strong>Website:</strong>
+          <p><a href="https://www.aliora.co.in" target="_blank">www.aliora.co.in</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+      <iframe 
+        src="https://www.google.com/maps?q=G12+SMC+Complex+Kilvani+Naka,+Silvassa,+Dadra+and+Nagar+Haveli,+396230&output=embed"
+        allowfullscreen
+        loading="lazy"
+        title="Ali Ora Multi-Service Location"
+        aria-label="Location map of Ali Ora Multi-Service">
+      </iframe>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Ali Ora Multi-Service. All rights reserved.</p>
+  </footer>
 </body>
 </html>

@@ -7,19 +7,35 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #111;
-  text-align: center;
-  background-image: url(/images/recruitment\ background.png);
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.header {
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/recruitment background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional: for a parallax effect */
+  color: white;
+  text-align: center;
 }
 
-.header {
-  padding: 40px 20px;
-  background: linear-gradient(to right, #f9f9f9, #e9f5ff);
+.header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #fff, #3498db);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* --- Navbar Styling --- */
@@ -46,11 +62,6 @@ body {
     opacity: 1;
   }
 }
-
-/* .navbar .logo {
-  height: 50px;
-  border-radius: 50%;
-} */
 
 .navbar ul {
   list-style: none;
@@ -133,7 +144,7 @@ body {
 
 .header p {
   font-size: 1.2em;
-  color: #555;
+  color: #e3cb2f;
 }
 
 .services {
@@ -146,11 +157,35 @@ body {
   text-align: left;
 }
 
+.service-description h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
 .service-description p {
-  margin-bottom: 15px;
-  font-size: 1.3em;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #34495e;
+}
+
+.service-description li {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.service-description li::before {
+  content: "•";
+  color: #3498db;
   font-weight: bold;
-  color: rgb(196, 199, 17);
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
 }
 
 .service-description ul {
@@ -160,7 +195,7 @@ body {
 .service-description ul li {
   margin-bottom: 10px;
   line-height: 1.6;
-  color: rgb(197, 213, 107);
+  color: rgb(46, 66, 184);
   font-weight: 500;
   font-size: 1.3em;
 }
@@ -170,6 +205,7 @@ body {
   padding: 20px 10px;
   font-size: 0.9em;
   color: #777;
+  text-align: center;
 }
 
 .water-images {
