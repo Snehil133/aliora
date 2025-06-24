@@ -1,4 +1,3 @@
-
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -25,7 +24,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/taxi background.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/transport.jpg');
   background-size: cover;
   background-position: center;
   height: 40vh;
@@ -189,27 +188,43 @@ body {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 30px;
   max-width: 600px;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 2rem;
 }
 
 .img-wrapper {
-  border-radius: 8px;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.img-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #004d7a, #008793, #00bf72);
+  animation: spin 10s linear infinite;
 }
 
 .service-image {
-  width: 100%;
-  height: 100%;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-.img-wrapper:hover {
+.img-wrapper:hover .service-image {
   transform: scale(1.05);
 }
 

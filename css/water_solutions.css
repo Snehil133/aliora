@@ -12,18 +12,43 @@ body {
   text-align: center;
 }
 
-.header {
-  padding: 40px 20px;
-  background: linear-gradient(to right, #f9f9f9, #e9f5ff);
+/* Hero Section */
+.hero {
+  background: url('/images/water plant.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
-/* --- Navbar Styling --- */
+.hero-content {
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #004d7a, #008793, #00bf72);
-  padding: 1rem 1rem;
+  padding: 0.8rem 2rem;
+  position: fixed;
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 999;
